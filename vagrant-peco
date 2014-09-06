@@ -15,4 +15,8 @@ vagrant_peco() {
   | xargs -I % bash -c "vagrant_with_direnv %"
 }
 
-vagrant_peco "$*"
+if [ $# -ge 1 ] ; then
+  vagrant_peco "$*"
+else
+  echo "Usage: vagrant-peco <command>"
+fi
