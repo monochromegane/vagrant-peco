@@ -1,0 +1,18 @@
+#!/bin/sh
+
+vagrant_with_direnv() {
+    if [ -f $3/.envrc ]; then
+      source $3/.envrc
+    fi
+    vagrant $1 $2
+}
+
+vagrant_peco() {
+  export -f vagrant_with_direnv
+  vagrant-global-status \
+  | peco \
+  | awk -v cmd="$1" '{print cmd,$1,$5}' \
+  | xargs -I % bash -c "vagrant_with_direnv %"
+}
+
+vagrant_peco "$*"
