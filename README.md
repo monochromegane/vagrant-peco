@@ -35,7 +35,7 @@ $ chmod +x ./vagrant-peco
 
 ### Note
 
-`vagrant-global-status` depends on the following.
+`vagrant-peco` depends on the following.
 
 - [peco](https://github.com/peco/peco)
 - [Vagrant 1.6 or higher (vagrant global-status)](http://www.vagrantup.com/blog/feature-preview-vagrant-1-6-global-status.html)
