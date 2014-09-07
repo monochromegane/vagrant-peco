@@ -25,6 +25,14 @@ $ vagrant-peco <command>
 
 You can specify same vagrant command (ex. status, up, halt...).
 
+### vagrant-peco up
+
+![](./images/vagrant-peco-up.gif)
+
+### vagrant-peco halt (select multiple)
+
+![](./images/vagrant-peco-multiple-selection.gif)
+
 ## Installation
 
 ```console
