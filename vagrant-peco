@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 vagrant_peco() {
   if [ $1 = "ssh" ]; then
